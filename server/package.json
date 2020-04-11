@@ -5,14 +5,20 @@
         "apollo-server-express": "^2.12.0",
         "body-parser": "^1.19.0",
         "express": "^4.17.1",
-        "graphql": "^15.0.0"
+        "graphql": "^15.0.0",
+        "lodash.merge": "^4.6.2",
+        "mongodb": "^3.5.5"
     },
     "devDependencies": {
         "@types/body-parser": "^1.19.0",
+        "@types/dotenv": "^8.2.0",
         "@types/express": "^4.17.4",
+        "@types/lodash.merge": "^4.6.6",
+        "@types/mongodb": "^3.5.5",
         "@types/node": "^13.11.0",
         "@typescript-eslint/eslint-plugin": "^2.26.0",
         "@typescript-eslint/parser": "^2.26.0",
+        "dotenv": "^8.2.0",
         "eslint": "^6.8.0",
         "nodemon": "^2.0.2",
         "ts-node": "^8.8.1",
@@ -20,6 +26,7 @@
     },
     "scripts": {
         "start": "nodemon src/index.ts",
-        "build": "tsc -p ./"
+        "build": "tsc -p ./",
+        "seed": "ts-node temp/seeds.ts"
     }
 }
